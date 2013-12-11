@@ -1,4 +1,6 @@
-# Node OS shim [![Build Status](https://secure.travis-ci.org/AdesisNetlife/node-os-shim.png?branch=master)](http://travis-ci.org/AdesisNetlife/node-os-shim)
+# Node OS shim
+[![Build Status](https://secure.travis-ci.org/AdesisNetlife/node-os-shim.png?branch=master)][travis]
+[![NPM version](https://badge.fury.io/js/node-os-shim.png)][badge]
 
 > Native OS module API shim for older node.js versions
 
@@ -94,3 +96,5 @@ Released under MIT license
 
 [1]: http://nodejs.org/api/os.html
 [2]: https://github.com/joyent/node/blob/master/lib/os.js
+[travis]: http://travis-ci.org/AdesisNetlife/node-os-shim
+[badge]: http://badge.fury.io/js/node-os-shim
