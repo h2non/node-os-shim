@@ -29,6 +29,8 @@ You can mutate the `os-shim` module object without worring about it can create s
 
 ## The missing API
 
+The following API is missing in node.js `0.8.x` and lower versions
+
 #### os.tmpdir()
 Returns the operating system's default directory for temp files
 
