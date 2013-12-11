@@ -1,4 +1,4 @@
-# os-shim [![Build Status](https://secure.travis-ci.org/AdesisNetlife/node-os-shim.png?branch=master)](http://travis-ci.org/AdesisNetlife/node-os-shim)
+# Node OS shim [![Build Status](https://secure.travis-ci.org/AdesisNetlife/node-os-shim.png?branch=master)](http://travis-ci.org/AdesisNetlife/node-os-shim)
 
 > Native OS module API shim for older node.js versions
 
