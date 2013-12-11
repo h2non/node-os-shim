@@ -6,7 +6,10 @@
 
 Node.js team was frozen the [OS module API][1] in 0.10.x version, however the API differs a bit in lower node.js versions
 
-This shim just provides the missing OS API that exist on the latest node.js native [implementation][2], so you can use it in lower node.js versions and it feels like you are in latest versions
+This shim just provides the missing OS module API that exist on the latest node.js versions. 
+You can use it in lower node.js versions and feels like you are in latest versions
+
+It's based on the current node.js [implementations][2]
 
 ## Installation
 
