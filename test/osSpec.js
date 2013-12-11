@@ -6,7 +6,7 @@ var osShim
 var isWin = process.platform === 'win32'
 var tmpVar = isWin ? 'TEMP' : 'TMPDIR'
 var tmpDir = process.env[tmpVar]
-var isNode10 = (/0\.10\./).test("0.10.3")
+var isNode10 = (/0\.10\./).test(process.versions.node)
 
 var shimAPI = [ 'tmpdir', 'endianness', 'platform', 'arch', 'EOL' ]
 
