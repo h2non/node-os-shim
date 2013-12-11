@@ -1,6 +1,6 @@
 {
   "name": "os-shim",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Native OS module API shim for older node.js versions",
   "homepage": "http://github.com/adesisnetlife/node-os-shim",
   "bugs": "https://github.com/adesisnetlife/node-os-shim/issues",
