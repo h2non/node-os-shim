@@ -1,0 +1,39 @@
+{
+  "name": "os-shim",
+  "version": "0.1.0",
+  "description": "Native OS module API shim for older node.js versions",
+  "homepage": "http://github.com/adesisnetlife/node-os-shim",
+  "bugs": "https://github.com/adesisnetlife/node-os-shim/issues",
+  "contributors": [
+    {
+      "name": "Tomas Aparicio",
+      "email": "tomas@aparicio.me"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adesisnetlife/node-os-shim.git"
+  },
+  "licenses": "MIT",
+  "main": "lib/os",
+  "directories": {
+    "lib": "./lib"
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "os",
+    "tmpdir",
+    "endianness",
+    "shim"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.15.1",
+    "expect.js": "~0.2.0"
+  }
+}
