@@ -1,4 +1,4 @@
-# Node OS shim [![Build Status](https://secure.travis-ci.org/AdesisNetlife/node-os-shim.png?branch=master)][travis] [![NPM version](https://badge.fury.io/js/node-os-shim.png)][badge]
+# Node OS shim [![Build Status](https://secure.travis-ci.org/AdesisNetlife/node-os-shim.png?branch=master)][travis] [![NPM version](https://badge.fury.io/js/os-shim.png)][badge]
 
 > Native OS module API shim for older node.js versions
 
