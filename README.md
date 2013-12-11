@@ -95,4 +95,4 @@ Released under MIT license
 [1]: http://nodejs.org/api/os.html
 [2]: https://github.com/joyent/node/blob/master/lib/os.js
 [travis]: http://travis-ci.org/AdesisNetlife/node-os-shim
-[badge]: http://badge.fury.io/js/node-os-shim
+[badge]: http://badge.fury.io/js/os-shim
