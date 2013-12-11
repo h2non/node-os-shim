@@ -40,6 +40,12 @@ Returns the endianness of the CPU. Possible values are "BE" or "LE"
 #### os.EOL
 A constant defining the appropriate End-of-line marker for the operating system
 
+#### os.platform()
+Returns the operating system platform
+
+#### os.arch()
+Returns the operating system CPU architecture
+
 ## Contributing
 
 Instead of a formal styleguide, take care to maintain the existing coding style.
@@ -69,6 +75,8 @@ $ make test
     - Initial release
 
 ## To Do
+
+- Add `os.networkInterfaces()` shim method
 
 Do you miss something? Open an issue or make a PR!
 

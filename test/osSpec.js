@@ -8,16 +8,16 @@ var tmpVar = isWin ? 'TEMP' : 'TMPDIR'
 var tmpDir = process.env[tmpVar]
 var isNode10 = (/0\.10\./).test("0.10.3")
 
+var shimAPI = [ 'tmpdir', 'endianness', 'platform', 'arch', 'EOL' ]
+
 describe('os', function () {
 
   before(function () {
     if (isNode10) {
-      osCopy.tmpdir = os.tmpdir
-      os.tmpdir = undefined
-      osCopy.endianness = os.endianness
-      os.endianness = undefined
-      osCopy.EOL = os.EOL
-      os.EOL = undefined
+      shimAPI.forEach(function (prop) {
+        osCopy[prop] = os[prop]
+        os[prop] = undefined
+      })
     }
   })
 
@@ -28,9 +28,9 @@ describe('os', function () {
   after(function () {
     if (isNode10) {
       // restore members references
-      os.tmpdir = osCopy.tmpdir
-      os.endiannessos = osCopy.endianness 
-      os.EOL = osCopy.EOL
+      shimAPI.forEach(function (prop) {
+        os[prop] = osCopy[prop]
+      })
     }
   })
 
@@ -101,6 +101,38 @@ describe('os', function () {
         } else {
           expect(osShim.EOL).to.be.equal('\n')
         }
+      })
+
+    })
+
+    describe('platform()', function () {
+
+      it('should be expose the method', function () {
+        expect(osShim.platform).to.be.a('function')
+      })
+
+      it('should use the exposed shim method', function () {
+        expect(osShim.platform).to.not.be.equal(os.platform)
+      })
+
+      it('should return the proper EOL value', function () {
+        expect(osShim.platform()).to.be.equal(process.platform)
+      })
+
+    })
+
+    describe('arch()', function () {
+
+      it('should be expose the method', function () {
+        expect(osShim.arch).to.be.a('function')
+      })
+
+      it('should use the exposed shim method', function () {
+        expect(osShim.arch).to.not.be.equal(os.arch)
+      })
+
+      it('should return the proper EOL value', function () {
+        expect(osShim.arch()).to.be.equal(process.arch)
       })
 
     })
