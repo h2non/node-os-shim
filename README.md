@@ -4,10 +4,10 @@
 
 ## About
 
-Node.js team was frozen the [OS module API][1] in 0.10.x version, however the API differs a bit in lower node.js versions
+Node.js team froze the [OS module API][1] in 0.10.x version, however the API differs a bit in lower node.js versions
 
-This shim just provides the missing OS module API that exist on the latest node.js versions.
-You can use it in lower node.js versions and feels like you are in latest versions
+This shim just provides the missing OS module API that is available on latest node.js versions.
+You can now use the `os` package in old node.js versions without fear.
 
 It's based on the current node.js [implementations][2]
 
